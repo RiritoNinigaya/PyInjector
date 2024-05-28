@@ -1,0 +1,7 @@
+﻿  dllmain.cpp
+     Creating library C:\Users\mkxzis\source\repos\PyInjector\x64\Release\PyInjector.lib and object C:\Users\mkxzis\source\repos\PyInjector\x64\Release\PyInjector.exp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 30 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  PyInjector.vcxproj -> C:\Users\mkxzis\source\repos\PyInjector\x64\Release\PyInjector.dll
