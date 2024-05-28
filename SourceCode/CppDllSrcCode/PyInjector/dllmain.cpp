@@ -4,9 +4,8 @@
 
 DLL_EXPORT void Inject(std::string exePath, std::string procName, std::string dllName) 
 {
-    bool start = 0;
     DWORD sleep = 0;
-    if (start) startProcess(exePath.c_str());
+    startProcess(exePath.c_str());
     inject(procName, dllName, sleep);
 }
 
