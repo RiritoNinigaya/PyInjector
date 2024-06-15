@@ -66,6 +66,6 @@ void inject(const std::string& processName, const std::string& dllPath, DWORD sl
 	HANDLE process = OpenProcess(PROCESS_ALL_ACCESS, 0, getProcessID(processName));
 	void* address = VirtualAllocEx(process, 0, dllPath.size(), MEM_COMMIT, PAGE_READWRITE);
 	WriteProcessMemory(process, address, dllPath.c_str(), dllPath.size(), 0);
-	CreateRemoteThread(process, 0, 0, (LPTHREAD_START_ROUTINE)GetProcAddress(LoadLibrary((LPCWSTR)"KERNEL32"), "LoadLibraryA"), address, 0, 0);
+	CreateRemoteThread(process, 0, 0, (LPTHREAD_START_ROUTINE)GetProcAddress(LoadLibrary((LPCWSTR)"kernel32"), "LoadLibraryA"), address, 0, 0);
 	CloseHandle(process);
 }
